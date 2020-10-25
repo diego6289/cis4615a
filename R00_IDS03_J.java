@@ -5,6 +5,13 @@ import java.util.regex.Pattern;
     Rule 00. Input Validation and Data Sanitization (IDS)
     IDS03-J. Do not log unsanitized user input.
     
+    Non-compliant code:
+    
+    if (loginSuccessful) {
+      logger.severe("User login succeeded for: " + username);
+    } else {
+      logger.severe("User login failed for: " + username);
+    
     Solution (Sanitized User) This compliant solution sanitizes the username before logging it, 
     preventing injection attacks.
 */
