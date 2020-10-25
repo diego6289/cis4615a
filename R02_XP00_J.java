@@ -6,6 +6,13 @@ import java.io.File;
 
 	The noncompliant code example attempts to delete a file but fails to 
 	check whether the operation has succeeded:
+	
+	public void deleteFile(){
+		File someFile = new File("someFileName.txt");
+      		// Do something with someFile
+		someFile.delete();
+      	}
+     
 
 	This compliant solution checks the Boolean value returned by the delete() 
 	method and handles any resulting errors:
