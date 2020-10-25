@@ -2,8 +2,8 @@ import java.util.*;
 import java.io.File;
 
 /*
-	Rule 09. Locking (LCK)
-	LCK10-J. Use a correct form of the double-checked locking idiom
+	Rule 13. Input Output (FIO)
+	FIO02-J. Detect and handle file-related errors
 
 	This noncompliant code example attempts to delete a specified file but gives 
 	no indication of its success. The Java platform requires File.delete() 
