@@ -9,7 +9,8 @@ import java.util.regex.Pattern;
     preventing injection attacks.
 */
 
-public class R00_IDS03_J {
+public class R00_IDS03_J 
+{
     public static void main(String args[]) 
     {
         boolean loginSuccessful = true;
