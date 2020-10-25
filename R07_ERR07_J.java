@@ -5,8 +5,8 @@ import java.util.*;
 	ERR07-J. Do not throw RuntimeException, Exception, or Throwable
 
 
-	This compliant solution throws NullPointerException to denote the specific exceptional condition:
-/* 
+	This compliant solution throws NullPointerException to denote the specific exceptional condition
+
 	Noncompliant Code Example 
 
 	boolean isCapitalized(String s) {
