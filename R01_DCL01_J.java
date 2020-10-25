@@ -4,9 +4,8 @@ import java.util.*;
 	Rule 01. Declarations and Initialization (DCL)
 	DCL01-J. Do not reuse public identifiers from the Java Standard Library
 
-This compliant solution uses a different name for the class, preventing any potential shadowing of the class from the Java Standard Library:*/
+	This compliant solution uses a different name for the class, preventing any potential shadowing of the class from the Java Standard Library:
 
-/* 
 	Noncompliant Code Example 
 
 	class Vector {
