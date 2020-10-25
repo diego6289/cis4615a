@@ -20,7 +20,7 @@ import java.io.File;
       		// Do something with someFile
       		if (!someFile.delete()) 
       		{
-        		// Handle failure to delete the file
+        		System.out.println("Deletion failed");
       		}
      
     }
