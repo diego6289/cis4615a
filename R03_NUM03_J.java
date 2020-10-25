@@ -7,6 +7,10 @@ import java.nio.ByteBuffer;
 	Rule 03. Numeric Types and Operations (NUM)
 	NUM03-J. Use integer types that can fully represent the possible range
 	of unsigned data.
+	
+	public static int getInteger(DataInputStream) {
+	   return is.readInt();
+	}
 
 	This compliant solution requires that the values read are 32-bit unsigned integers. 
 	It reads an unsigned integer value using the readInt() method. 
@@ -21,13 +25,13 @@ public class R03_NUM03_J
 {
     public static void main(String[] args) throws IOException
     {
-		byte [] b = ByteBuffer.allocate(3).putInt(100).array();
-		DataInputStream is = new DataInputStream(new ByteArrayInputStream(b));
-		System.out.println(getInteger(is));
+	byte [] b = ByteBuffer.allocate(3).putInt(100).array();
+	DataInputStream is = new DataInputStream(new ByteArrayInputStream(b));
+	System.out.println(getInteger(is));
     }
 
     public static long getInteger(DataInputStream is) throws IOException 
     {
-      return is.readInt() & 0xFFFFFFFFL; // Mask with 32 one-bits
+	return is.readInt() & 0xFFFFFFFFL; // Mask with 32 one-bits
     }
 }
