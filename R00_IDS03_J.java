@@ -2,6 +2,7 @@ import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /* 
+    Rule 00. Input Validation and Data Sanitization (IDS)
     IDS03-J. Do not log unsanitized user input.
     
     Vulnerability: Allowing unvalidated user input to be logged can result in forging of 
